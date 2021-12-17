@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="../js/jquery-3.3.1.min.js"></script>
+
+<title>Ver Actividades</title>
+
+<link rel="stylesheet" href="../css/headerandfooter.css">
+  
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<link rel="stylesheet" type="text/css" href="../css/stylesheet.css"></link>
+
+</head>
+
+
+<body scroll="no" style="overflow: hidden">
+
+
+    <!-- Sidebar -->
+    <div class="sidenav w3-sidebar w3-bar-block w3-card w3-animate-left " style="display:none" id="mySidebar">
+      <button class="w3-bar-item w3-button w3-large" onclick="w3_close()" style="background: #333; color: #818181;">Close &times;</button>
+
+      <button class="dropdown-btn">Categorias
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="consultaCategoriaSocio.html">Deportes</a>
+      </div>
+      <button class="dropdown-btn">Instituciones
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="consultaActividadesSocio.html">Telón</a>
+
+      </div>
+      <button class="dropdown-btn">Cuponeras
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="consultaCuponeraSocio.html">Pelota</a>
+      </div>
+	  <a class="dropdown-btn" href="consultaUsuariosSocio.html">Ver Usuarios
+      </a>
+
+    </div>
+
+    <!-- Page Content -->
+    <div id="topnav" class="topnav">
+      <div class="row">
+        <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+        <a href="indexSocio.html" id="nombreEmpresa">Entrenamos.uy</a>
+      </div>
+      <div class="search-container row">
+        <form action="#">
+          <input type="text" placeholder="Search.." name="search">
+        </form>
+      </div>
+
+      <div id="sesion" class="row">
+        <ul class="OpcionMenu">
+          <li>
+            <div class="userEnSesion" onclick="window.location.href='consultaSocioComoSocio.html'">
+              <img src="../img/Emi71.webp">
+              <p> Emi71 <br>
+                Socio</p>
+            </div>
+          </li>
+          <li>
+            <a href="/ServidorWeb/CerrarSesion">Abandonar Sesion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+<div id="main" class="w3-container" style="margin-top:5%; height: 80%; width:100%;overflow:auto">
+
+<h1>Actividades de Telon</h1>
+
+	<div id="listaActividades" name="usersList" title="usrList"
+	style ="width:90%; margin: auto; display: block; background-color: #b0e0e6"> 
+		 <ul class="user" style="border-style:solid">
+		  
+		  <li >
+			<div onclick="change('consultaActividadSocio.html')">
+			  <article>
+				<img src="../img/volleyball.jpeg" align = "left" height = "100" width = "100">
+				<p>.</p>
+				<h3>Volleyball</h3>
+				<p>.</p>
+				 
+			  </article>
+			  <br>
+			</div>
+		  </li>
+		 <li>
+			<div>
+			   <article>
+				<img src="../img/basketball.jpeg" align = "left" height = "100" width = "100">
+				<p>.</p>
+				<h3>Basketball</h3>
+				<p>.</p>
+			  </article>
+			  <br>
+			</div>
+		  </li>
+		  <li>
+			<div>
+			  <article>
+				<img src="../img/atletismo.png" align = "left" height = "100" width = "100">
+				<p>.</p>
+				<h3>Atletismo</h3>
+				<p>.</p>
+			  </article>
+			  <br>
+			</div>
+		  </li>
+		  
+		</ul>
+		<script>
+			function change(link){
+				window.location.href = link;
+			}
+		</script>
+ 
+	 </div>
+</div>
+<footer>
+  <p>Hecho por grupo 11<br>
+  
+</footer>
+ 	<script type="text/javascript" src="../js/headerandfooter.js"></script> 
+ 
+</body>
+</html>

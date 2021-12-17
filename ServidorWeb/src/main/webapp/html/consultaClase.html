@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Consultar Clase</title>
+<script src="../js/jquery-3.3.1.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../css/stylesheet.css"></link>
+
+
+	<link rel="stylesheet" href="../css/headerandfooter.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+
+
+</head>
+
+<body scroll="no" style="overflow: hidden">
+	
+	
+    <!-- Sidebar -->
+    <div class="sidenav w3-sidebar w3-bar-block w3-card w3-animate-left " style="display:none" id="mySidebar">
+      <button class="w3-bar-item w3-button w3-large" onclick="w3_close()" style="background: #333; color: #818181;">Close &times;</button>
+
+      <button class="dropdown-btn">Categorias
+        <i class="fa fa-caret-down"></i>
+      </button>
+        <div class="dropdown-container">
+        <a href="consultaCategoria.html">Deportes</a>
+      </div>
+      <button class="dropdown-btn">Instituciones
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="consultaActividades.html">Telón</a>
+
+      </div>
+      <button class="dropdown-btn">Cuponeras
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="consultaCuponera.html">Pelota</a>
+      </div>
+	  <a class="dropdown-btn" href="consultaUsuarios.html">Ver Usuarios
+      </a>
+
+    </div>
+
+    <!-- Page Content -->
+    <div id="topnav" class="topnav">
+      <div class="row">
+        <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+        <a href="index.html" id="nombreEmpresa">Entrenamos.uy</a>
+      </div>
+      <div class="search-container row">
+        <form action="#">
+          <input type="text" placeholder="Search.." name="search">
+        </form>
+      </div>
+
+      <div id="sesion" class="row">
+        <ul class="OpcionMenu">
+          
+          <li>
+            <a href="#">Sesion</a>
+            <ul class="OpcionMenu">
+              <li><a href="iniciarSesion.html">Iniciar Sesion</a></li>
+            </ul>
+          </li>
+          <li>
+            <a id="registro" href="altaUsuario.html">Registrar Usuario</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+	
+	<div id="main" class="w3-container" style="margin-top:5%; height: 40%; width:100%">
+
+	<div>
+	<article>
+		<img src="../img/volleyball2.jpeg" style="float:left;width:18%;margin-top:5%;margin-left:10%;padding-right:20px;">
+		<h1 style="text-align: center-left; margin-top:0%">Clase: Voleibol</h1>
+		<br>
+		<a href="consultaActividad.html">Ver información Actividad Deportiva</a>
+		<p>Fecha dictado: 10/06/21</p>
+		<p>Hora: 19:00</p>
+		<p>Mínima cantidad de participantes: 10</p>
+		<p>Máxima cantidad de participantes: 21</p>
+		<p>Fecha de registro: 20/04/21</p>
+		
+
+	</article>
+	</div>
+
+	</div>
+
+<footer>
+  <p>Hecho por grupo 11<br>
+  
+</footer>
+ 	<script type="text/javascript" src="../js/headerandfooter.js"></script> 
+
+</body>
+
+</html>

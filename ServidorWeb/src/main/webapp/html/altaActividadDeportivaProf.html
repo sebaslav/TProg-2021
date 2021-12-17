@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Alta de Actividad Deportiva</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	
+	<link rel="stylesheet" href="../css/headerandfooter.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	
+	
+	<style>
+		html,body{
+			background-color: Linen;
+		}	
+
+		label {
+	 		display: inline-block;
+	 		clear: left;
+	 		width: 250px;
+	 		text-align: right;
+	 		margin: 5px auto;
+	 	}
+	 	
+	 	input {
+	 		display: inline-block;
+	 		margin: 5px auto;
+	 	}
+	</style>
+</head>
+<body>
+	
+	
+    <!-- Sidebar -->
+    <div class="sidenav w3-sidebar w3-bar-block w3-card w3-animate-left " style="display:none" id="mySidebar">
+      <button class="w3-bar-item w3-button w3-large" onclick="w3_close()" style="background: #333; color: #818181;">Close &times;</button>
+
+      <button class="dropdown-btn">Categorias
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="consultaCategoriaProf.html">Deportes</a>
+      </div>
+      <button class="dropdown-btn">Instituciones
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="consultaActividadesProf.html">Telón</a>
+
+      </div>
+      <button class="dropdown-btn">Cuponeras
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="consultaCuponeraProf.html">Pelota</a>
+      </div>
+	  <a class="dropdown-btn" href="consultaUsuariosProf.html">Ver Usuarios
+      </a>
+      <a class="dropdown-btn" href="altaActividadDeportivaProf.html">Registrar Actividad
+      </a>
+
+    </div>
+
+    <!-- Page Content -->
+    <div id="topnav" class="topnav">
+      <div class="row">
+        <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+        <a href="indexProf.html" id="nombreEmpresa">Entrenamos.uy</a>
+      </div>
+      <div class="search-container row">
+        <form action="#">
+          <input type="text" placeholder="Search.." name="search">
+        </form>
+      </div>
+
+      <div id="sesion" class="row">
+        <ul class="OpcionMenu">
+          <li>
+            <div class="userEnSesion" onclick="window.location.href='consultaProfesorComoProfesor.html'">>
+              <img src="../img/denis.jpg">
+              <p> denis <br>
+              Profesor</p>
+            </div>
+          </li>
+          <li>
+            <a href="/ServidorWeb/CerrarSesion">Abandonar Sesion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+	
+	<div id="main" class="w3-container" >
+
+
+	<section>
+		<!-- Formulario -->
+		<div>
+			<form action="">
+				<div>
+					<fieldset class="formulario">
+						<legend>Nueva actividad deportiva:</legend>
+
+						<label for="nombre">Nombre:</label>
+						<input type="text" id="nombre" name="nombre"><br>
+						
+						<label for="descripcion">Descripcion:</label>
+						<input type="text" id="descripcion" name="descripcion"><br>
+						
+						<label for="duracion">Duracion:</label>
+						<input type="text" id="duracion" name="duracion"><br>
+						
+						<label for="costo">Costo:</label>
+						<input type="text" id="costo" name="costo"><br>
+						
+						<label for="categoria">Categorias:</label>
+						<!-- Lista de categorias -->
+						<ul>
+							<li>
+								<label for="radio_cat1">Deportes</label>
+								<input type="radio" id="radio_cat1"><br>
+							</li>
+						</ul>
+						<button onclick="clear()" style="margin-left:25%;">Limpiar</button>
+					</fieldset>
+				</div>
+				
+				<div>
+					<input type="button" onclick="alert('Clase Registrada Exitosamente');document.location='indexProf.html';" value="Registrar">
+					<input type="button" onclick="document.location='indexProf.html'" value="Cancelar">
+				</div>
+			</form>
+			
+		</div>
+	</section>
+	
+	</div>
+	<footer>
+  	<p>Hecho por grupo 11<br>
+  
+	</footer>
+	<script type="text/javascript" src="../js/headerandfooter.js"></script> 
+	
+	<script>
+
+		function clear(){
+			document.getElementById("radio_cat1").checked = false;  
+		}	
+	</script>
+</body>
+</html>
